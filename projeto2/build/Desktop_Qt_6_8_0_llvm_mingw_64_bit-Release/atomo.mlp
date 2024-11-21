@@ -1,0 +1,166 @@
+<!DOCTYPE MeshLabDocument>
+<MeshLabProject>
+ <MeshGroup>
+  <MLMesh label="elipse.off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/elipse.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="elipse(1).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/elipse.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="linha_casca_elipse.off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/linha_casca_elipse.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="linha_casca_elipse(1).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/linha_casca_elipse.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="linha_casca_elipse(2).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/linha_casca_elipse.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="linha_casca_elipse(3).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/linha_casca_elipse.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="anel_esferico.off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/anel_esferico.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="anel_esferico(1).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/anel_esferico.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="anel_esferico(2).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/anel_esferico.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="anel_gerado.off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/anel_gerado.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="anel_xy_xz.off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/anel_xy_xz.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="anel_xy_xz(1).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/anel_xy_xz.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="anel_xy_xz(2).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/anel_xy_xz.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="modelo.off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/modelo.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="modelo(1).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/modelo.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="modelo(2).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/modelo.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="modelo(3).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/modelo.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="modelo(4).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/modelo.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="modelo(5).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/modelo.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="modelo(6).off" filename="../../../../../PROGRAMA??O AVAN?ADA/projeto1/projeto2/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Release/modelo.off">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+ </MeshGroup>
+ <RasterGroup/>
+</MeshLabProject>
