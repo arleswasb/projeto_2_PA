@@ -1,5 +1,6 @@
 #ifndef SCULPTOR_H
 #define SCULPTOR_H
+#include <string>
 
 class Sculptor
 {
@@ -30,7 +31,7 @@ public:
     void cutSphere(int xcenter, int ycenter, int zcenter, int radius);
     void putEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz);
     void cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz);
-    void writeOFF(const char *filename);
+    void writeOFF(const std::string &nomeArquivo);
 };
 
 #endif // SCULPTOR_H

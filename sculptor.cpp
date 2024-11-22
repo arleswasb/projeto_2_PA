@@ -271,11 +271,11 @@ void Sculptor::cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int r
 }
 
 
-void Sculptor::writeOFF(const char* filename) {
-    std::ofstream file;
-    file.open(filename);
+void Sculptor::writeOFF(const std::string &nomeArquivo) {
+    std::ofstream fout;
+    fout.open(nomeArquivo);
 
-    if (!file.is_open()) {
+     if (!fout.is_open()) {
         std::cerr << "Erro ao abrir o arquivo!" << std::endl;
         return;
     }
@@ -294,13 +294,13 @@ void Sculptor::writeOFF(const char* filename) {
 
     if (nVoxels == 0) {
         std::cerr << "Nenhum voxel ativo para salvar." << std::endl;
-        file.close();
+        fout.close();
         return;
     }
 
     // Escreve o cabeçalho OFF
-    file << "OFF\n";
-    file << nVoxels * 8 << " " << nVoxels * 6 << " 0\n";
+    fout << "OFF\n";
+    fout << nVoxels * 8 << " " << nVoxels * 6 << " 0\n";
 
     // Lista de vértices
     int voxelIndex = 0; // Índice único para cada voxel ativo
@@ -308,14 +308,14 @@ void Sculptor::writeOFF(const char* filename) {
         for (int y = 0; y < ny; y++) {
             for (int z = 0; z < nz; z++) {
                 if (v[x][y][z].show) {
-                    file << x - 0.5 << " " << y - 0.5 << " " << z - 0.5 << "\n"; // Vértice 0
-                    file << x - 0.5 << " " << y - 0.5 << " " << z + 0.5 << "\n"; // Vértice 1
-                    file << x - 0.5 << " " << y + 0.5 << " " << z - 0.5 << "\n"; // Vértice 2
-                    file << x - 0.5 << " " << y + 0.5 << " " << z + 0.5 << "\n"; // Vértice 3
-                    file << x + 0.5 << " " << y - 0.5 << " " << z - 0.5 << "\n"; // Vértice 4
-                    file << x + 0.5 << " " << y - 0.5 << " " << z + 0.5 << "\n"; // Vértice 5
-                    file << x + 0.5 << " " << y + 0.5 << " " << z - 0.5 << "\n"; // Vértice 6
-                    file << x + 0.5 << " " << y + 0.5 << " " << z + 0.5 << "\n"; // Vértice 7
+                    fout << x - 0.5 << " " << y - 0.5 << " " << z - 0.5 << "\n"; // Vértice 0
+                    fout << x - 0.5 << " " << y - 0.5 << " " << z + 0.5 << "\n"; // Vértice 1
+                    fout << x - 0.5 << " " << y + 0.5 << " " << z - 0.5 << "\n"; // Vértice 2
+                    fout << x - 0.5 << " " << y + 0.5 << " " << z + 0.5 << "\n"; // Vértice 3
+                    fout << x + 0.5 << " " << y - 0.5 << " " << z - 0.5 << "\n"; // Vértice 4
+                    fout << x + 0.5 << " " << y - 0.5 << " " << z + 0.5 << "\n"; // Vértice 5
+                    fout << x + 0.5 << " " << y + 0.5 << " " << z - 0.5 << "\n"; // Vértice 6
+                    fout << x + 0.5 << " " << y + 0.5 << " " << z + 0.5 << "\n"; // Vértice 7
                 }
             }
         }
@@ -328,20 +328,20 @@ void Sculptor::writeOFF(const char* filename) {
             for (int z = 0; z < nz; z++) {
                 if (v[x][y][z].show) {
                     int base = voxelIndex * 8;
-                    file << "4 " << base + 0 << " " << base + 1 << " " << base + 3 << " " << base + 2 << " " << v[x][y][z].r << " " << v[x][y][z].g << " " << v[x][y][z].b << " " << v[x][y][z].a << "\n" ; // Face -xy
-                    file << "4 " << base + 4 << " " << base + 5 << " " << base + 7 << " " << base + 6 << " " << v[x][y][z].r << " " << v[x][y][z].g << " " << v[x][y][z].b << " " << v[x][y][z].a << "\n"; // Face +xy
-                    file << "4 " << base + 0 << " " << base + 1 << " " << base + 5 << " " << base + 4 << " " << v[x][y][z].r << " " << v[x][y][z].g << " " << v[x][y][z].b << " " << v[x][y][z].a << "\n"; // Face -xz
-                    file << "4 " << base + 2 << " " << base + 3 << " " << base + 7 << " " << base + 6 << " " << v[x][y][z].r << " " << v[x][y][z].g << " " << v[x][y][z].b << " " << v[x][y][z].a << "\n"; // Face +xz
-                    file << "4 " << base + 0 << " " << base + 2 << " " << base + 6 << " " << base + 4 << " " << v[x][y][z].r << " " << v[x][y][z].g << " " << v[x][y][z].b << " " << v[x][y][z].a << "\n"; // Face -yz
-                    file << "4 " << base + 1 << " " << base + 3 << " " << base + 7 << " " << base + 5 << " " << v[x][y][z].r << " " << v[x][y][z].g << " " << v[x][y][z].b << " " << v[x][y][z].a << "\n"; // Face +yz
+                    fout << "4 " << base + 0 << " " << base + 1 << " " << base + 3 << " " << base + 2 << " " << v[x][y][z].r << " " << v[x][y][z].g << " " << v[x][y][z].b << " " << v[x][y][z].a << "\n" ; // Face -xy
+                    fout << "4 " << base + 4 << " " << base + 5 << " " << base + 7 << " " << base + 6 << " " << v[x][y][z].r << " " << v[x][y][z].g << " " << v[x][y][z].b << " " << v[x][y][z].a << "\n"; // Face +xy
+                    fout << "4 " << base + 0 << " " << base + 1 << " " << base + 5 << " " << base + 4 << " " << v[x][y][z].r << " " << v[x][y][z].g << " " << v[x][y][z].b << " " << v[x][y][z].a << "\n"; // Face -xz
+                    fout << "4 " << base + 2 << " " << base + 3 << " " << base + 7 << " " << base + 6 << " " << v[x][y][z].r << " " << v[x][y][z].g << " " << v[x][y][z].b << " " << v[x][y][z].a << "\n"; // Face +xz
+                    fout << "4 " << base + 0 << " " << base + 2 << " " << base + 6 << " " << base + 4 << " " << v[x][y][z].r << " " << v[x][y][z].g << " " << v[x][y][z].b << " " << v[x][y][z].a << "\n"; // Face -yz
+                    fout << "4 " << base + 1 << " " << base + 3 << " " << base + 7 << " " << base + 5 << " " << v[x][y][z].r << " " << v[x][y][z].g << " " << v[x][y][z].b << " " << v[x][y][z].a << "\n"; // Face +yz
                     voxelIndex++;
                 }
             }
         }
     }
 
-    file.close();
-    std::cout << "Arquivo " << filename << " gravado com sucesso no formato OFF.\n";
+    fout.close();
+    std::cout << "Arquivo " << nomeArquivo << " gravado com sucesso no formato OFF.\n";
 }
 
 

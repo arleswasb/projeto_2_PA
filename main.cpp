@@ -29,6 +29,7 @@ int main() {
     std::cout << "Digite o nome do elemento: ";
     std::getline(std::cin, nome);
 
+
     // Chama o método para procurar o elemento e retornar o raio
     double raio = elementos.selecionarElementoPorNome(nome);
     if (raio ==-1){
@@ -133,7 +134,7 @@ int main() {
 
     }
 
-    s.writeOFF("Modelo.off");
+    s.writeOFF(nome + ".off");
 
     return 0;
 }
