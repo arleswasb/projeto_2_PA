@@ -39,26 +39,6 @@ Sculptor::~Sculptor()
     delete[] v;       // Libera as linhas (primeiro nível)
 }
 
-void Sculptor::Imprime_Planos() {
-    // Itera sobre todos os planos
-    for (int i = 0; i < nx; i++) {
-        std::cout << "Plano " << i << ":\n";
-        // Itera sobre as linhas (ny)
-        for (int j = 0; j < ny; j++) {
-            // Itera sobre as colunas (nz)
-            for (int k = 0; k < nz; k++) {
-                // Verifica se o voxel está ativo
-                if (v[i][j][k].show) {
-                    std::cout << "1 "; // Voxel ativo
-                } else {
-                    std::cout << "0 "; // Voxel inativo
-                }
-            }
-            std::cout << "\n"; // Nova linha para cada linha da matriz
-        }
-    }
-}
-
 void Sculptor::putVoxel(int x, int y, int z) {
     // Verifica se as coordenadas estão dentro dos limites da matriz
     if (x >= 0 && x < nx && y >= 0 && y < ny && z >= 0 && z < nz) {
