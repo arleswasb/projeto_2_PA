@@ -116,17 +116,7 @@ void Sculptor::cutBox(int x0, int x1, int y0, int y1, int z0, int z1) {
             for (int z = z0; z <= z1; ++z) { // Para cada coordenada z no intervalo [z0, z1]
                 // Referência ao voxel atual para evitar múltiplos acessos à matriz
                 Voxel &voxel = v[x][y][z];
-
-                // Ativar o voxel: marca que ele está "ligado"
-                voxel.show = false;
-
-                // Define a cor do voxel usando os valores atuais de cor da classe
-                voxel.r = r;  // Cor vermelha
-                voxel.g = g;  // Cor verde
-                voxel.b = b;  // Cor azul
-
-                // Define a transparência do voxel usando o valor atual de alfa
-                voxel.a = a;  // Transparência (opacidade)
+                voxel.show = false; // Desativa o voxel
             }
         }
     }
@@ -173,14 +163,8 @@ void Sculptor::cutSphere(int xcenter, int ycenter, int zcenter, int radius) {
                 if ((x - xcenter) * (x - xcenter) +
                         (y - ycenter) * (y - ycenter) +
                         (z - zcenter) * (z - zcenter) <= radius * radius) {
-                    // Ativa o voxel
-                    v[x][y][z].show = false;
 
-                    // Define a cor do voxel
-                    v[x][y][z].r = r;
-                    v[x][y][z].g = g;
-                    v[x][y][z].b = b;
-                    v[x][y][z].a = a;
+                    v[x][y][z].show = false; // Desativa o voxel
                 }
             }
         }
@@ -237,13 +221,7 @@ void Sculptor::cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int r
 
                 // Se a equação for menor ou igual a 1, o voxel pertence ao elipsóide
                 if (eq <= 1.0f) {
-                    v[x][y][z].show = false; // Ativa o voxel
-
-                    // Define a cor e a transparência do voxel
-                    v[x][y][z].r = r;
-                    v[x][y][z].g = g;
-                    v[x][y][z].b = b;
-                    v[x][y][z].a = a;
+                    v[x][y][z].show = false; // Desativa o voxel
                 }
             }
         }
